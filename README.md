@@ -101,7 +101,10 @@ After setting up the application and starting the server, you can interact with 
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/5ed48d4d-eb96-4808-a65d-b1b56d7918f2)
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/997b00e1-d06a-4a3a-b2c0-c7f74983a90c)
 
-  - **Update and Fetch all**
+- **Updating a Todo Item's Status**
+  - Endpoint: `PATCH /todoitems/:id`
+  - Body: `{ "isCompleted": true }`
+    
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/49602fed-2621-456f-b070-8df259a28af0)
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/e373a34f-9a6d-422e-8100-e744940de596)
 
@@ -109,12 +112,6 @@ After setting up the application and starting the server, you can interact with 
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/6d7c6978-7ac3-4700-895e-489c2fd8edf2)
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/3daa9a4e-6eb2-46b6-9319-804702679876)
 
-
-
-
-- **Updating a Todo Item's Status**
-  - Endpoint: `PATCH /todoitems/:id`
-  - Body: `{ "isCompleted": true }`
 
 ## Rollback Migrations
 
