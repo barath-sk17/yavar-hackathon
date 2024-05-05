@@ -120,3 +120,18 @@ If you need to undo a migration, use the following command to drop the tables:
 ```bash
 npx sequelize-cli db:migrate:undo
 ```
+
+## Complete Web Application ( Responsive Website )
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/9501b0d8-4d4d-4340-886d-4ca9b3a6cab5)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/e127514a-e1a0-481f-b17a-5c05d30c72c8)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/85bfb43c-d646-4adf-8ce2-5e7121163b8b)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/307b11aa-7988-4892-ad6c-c051492df7e7)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/0e7ecd37-c900-42e4-9c12-791d2fb6ad5b)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/b82a345f-2e36-491e-b384-67f7a3c72c17)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/262179b0-dac5-493f-9be0-6b87ac1cd2ff)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/b050ac0b-83ae-4d0e-ac6c-f1c72e0e9c62)
+![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/3fd92fac-85ee-4b76-8fc4-6cc0b543d563)
+
+
+
+
