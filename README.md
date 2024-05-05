@@ -1,24 +1,31 @@
-# Todo List App with Sequelize, Express.js, and PostgreSQL
+# Todo List App with Sequelize, Express.js, PostgreSQL, and React
 
-This project is a simple Todo List application built with Node.js, Express.js, and Sequelize. It uses PostgreSQL as the database engine and implements migrations to set up a relational database schema. The application demonstrates a basic relationship between users, todos, and todo items, allowing users to create, update, and delete todos and their respective items.
+This project is a simple Todo List application built with Node.js, Express.js, and Sequelize, featuring a responsive front-end built with React. It uses PostgreSQL as the database engine and implements migrations to set up a relational database schema. The application demonstrates a basic relationship between users, todos, and todo items, allowing users to create, update, and delete todos and their respective items.
 
 ## Project Structure
 
 The project consists of three main tables:
 
-- `Users`: Contains user information such as `name`, `email`, and `password`.
-- `Todos`: Represents a todo list created by a user, with a foreign key reference to the `Users` table.
-- `TodoItems`: Represents individual items within a todo list, with a foreign key reference to the `Todos` table.
+- **Users**: Contains user information such as `name`, `email`, and `password`.
+- **Todos**: Represents a todo list created by a user, with a foreign key reference to the `Users` table.
+- **TodoItems**: Represents individual items within a todo list, with a foreign key reference to the `Todos` table.
+
+The React front-end provides a responsive interface, adapting to various screen sizes, and ensures that during the login and signup phases, the input validation is correct. This includes:
+
+- **Password Requirements**: Passwords must be at least 8 characters long.
+- **Email Format**: Emails must conform to a valid regex pattern for proper email structure.
 
 ## Technology Stack
 
 - **Backend Framework**: Express.js
 - **ORM**: Sequelize
 - **Database**: PostgreSQL
+- **Front-end Framework**: React
+- **Authentication**: JSON Web Tokens (JWT) or sessions (depending on implementation)
 
 ## Getting Started
 
-To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequelize CLI](https://sequelize.org/master/manual/migrations.html), and a PostgreSQL database set up. Follow the steps below to set up and run the application.
+To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequelize CLI](https://sequelize.org/master/manual/migrations.html), [React](https://react.dev/), and a PostgreSQL database set up. Follow the steps below to set up and run the application.
 
 ### Installation
 
@@ -28,7 +35,7 @@ To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequeli
    cd <your-repo-folder>
    ```
 
-2. **Install Dependencies**
+2. **Install Backend Dependencies**
    ```bash
    npm install
    ```
@@ -42,20 +49,32 @@ To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequeli
    npx sequelize-cli db:migrate
    ```
 
+5. **Install Front-end Dependencies**
+   Navigate to the `client` folder and run:
+   ```bash
+   npm install
+   ```
+
 ### Running the Application
 
-1. **Start the Server**
-   To start the application, use:
+1. **Start the Backend Server**
+   To start the backend, use:
    ```bash
    npm start
    ```
 
-2. **Access the Application**
-   Once the server is running, access your application via `http://localhost:3000` or your configured port.
+2. **Start the Front-end Server**
+   In a separate terminal, navigate to the `client` folder and start the React development server:
+   ```bash
+   npm start
+   ```
+
+3. **Access the Application**
+   Once both servers are running, you can access the application at `http://localhost:3000` or the port configured in your React setup.
 
 ## Usage
 
-After setting up the application and starting the server, you can interact with the todo list through API endpoints. Here are some examples of how you can use the app:
+After setting up the application and starting the server, you can interact with the todo list through the web interface or API endpoints. The React front-end provides a responsive experience, with basic input validation during login and signup. Here's how you can use the app:
 
 - **Creating a User**
   - Endpoint: `POST /users`
