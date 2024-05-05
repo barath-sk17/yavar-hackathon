@@ -104,7 +104,7 @@ After setting up the application and starting the server, you can interact with 
 - **Updating a Todo Item's Status**
   - Endpoint: `PATCH /todoitems/:id`
   - Body: `{ "isCompleted": true }`
-    
+  -
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/49602fed-2621-456f-b070-8df259a28af0)
 ![image](https://github.com/barath-sk17/yavar-hackathon/assets/127032804/e373a34f-9a6d-422e-8100-e744940de596)
 
