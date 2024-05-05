@@ -31,8 +31,8 @@ To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequeli
 
 1. **Clone the Repository**
    ```bash
-   git clone <your-repo-url>
-   cd <your-repo-folder>
+   git clone git@github.com:barath-sk17/yavar-hackathon.git
+   cd yavar-hackathon
    ```
 
 2. **Install Backend Dependencies**
@@ -41,7 +41,7 @@ To run this project, ensure you have [Node.js](https://nodejs.org/en/), [Sequeli
    ```
 
 3. **Set Up the Database**
-   Ensure you have PostgreSQL running and create a new database. Update the Sequelize connection details in `config/config.json` to match your database configuration.
+   Ensure you have PostgreSQL running and create a new database. Update the Sequelize connection details in `config/config.js` to match your database configuration.
 
 4. **Run Migrations**
    After configuring the database, run the following command to create the tables:
